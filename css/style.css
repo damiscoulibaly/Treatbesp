@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --bg: #4c9cf13d;
+    --bg2: #ebebeb;
+    --primary: #000;
+    --base: #4C9CF1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--base);
+}
+
+body{
+    background-color: var(--bg);
+    font-family: 'roboto', sans-serif;
+}
+
+header{
+    background-image: url(../assets/images/header.png);
+    background-size: cover;
+    border-bottom: 9px solid #4C9CF1;
+    display: flex;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header h1 a u{
+    color: var(--primary);
+    font-family: 'bebas neue', sans-serif;
+    font-size: 4rem;
+}
+
+
+header ul{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+nav li:last-child{
+    flex: 1;
+    text-align: end;
+}
+
+nav a:hover{
+    color: var(--primary);
+}
+
+.ativo{
+    border-bottom: var(--primary) 3px solid;
+    padding: .5rem;
+}
+
+li{
+    list-style: none;
+    margin: 0 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#cabecalho{
+    display: flex;
+    position: relative;
+    height: 16rem;
+    
+}
+
+#cabecalho .logo{
+    padding: 0.5rem 0.5rem;
+    width: 106px;
+    height: 166px;
+    
+}
+
+#cabecalho .apresentacao {
+    
+    text-align: center;
+    width: 86%;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    text-shadow: .16rem .16rem .16rem rgba(0, 0, 0, 0.25);
+}
+
+#app{
+    display: flex;
+    align-items: center;
+
+}
+
+#app p{
+    width: 23%;
+    color: var(--primary);
+    font-size: 1.6rem;
+    padding: 0.5rem 0.5rem;
+    text-shadow: .16rem .16rem .16rem rgba(0, 0, 0, 0.25);
+
+}
+
+#cmbSistema{
+    color: var(--primary);
+    font-size: 1.6rem;
+    padding: 0.5rem 0.5rem;
+
+}
+
+#cmbSistema option{
+    color: var(--primary);
+}
+
+#buscar{
+    border-style: none;
+    background-color: var(--primary);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.6rem 1.6rem;
+    transition: filter .2s ease-in-out;
+    margin: 0rem 3.6rem;
+    font-size: 1rem;
+    width: 16%;
+}
+
+#limpar{
+    border-style: none;
+    background-color: var(--primary);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.6rem 1.6rem;
+    transition: filter .2s ease-in-out;
+    margin: 0rem 3.6rem;
+    font-size: 1rem;
+    width: 16%;
+}
+
+.botoes{
+    
+    background-color: var(--primary);
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1.6rem;
+    transition: filter .2s ease-in-out;
+    margin: 1rem 2rem;
+}
+
+#buscar:hover{
+    filter: drop-shadow(0px 0px 4px var(--primary))
+            drop-shadow(0px 0px 9px var(--primary));
+}
+
+#limpar:hover{
+    filter: drop-shadow(0px 0px 4px var(--primary))
+            drop-shadow(0px 0px 9px var(--primary));
+}
+
+table{
+    align-items: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    width: 100%;
+    
+}
+th, td{
+    padding: 5px 20px;
+    border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+
+    header h1 a{
+        margin-left: 2rem;
+    }
+
+    
+}
